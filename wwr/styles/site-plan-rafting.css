@@ -3,14 +3,13 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Handlee&family=Nunito+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #369bed   ;
-  --secondary-color: #2b5e83 ;
-  --accent1-color: #739E82   ;
-  --accent2-color: #3F4342   ;
+  --primary-color: #968e6d   ;
+  --secondary-color: black ;
+  --accent1-color: #fce172   ;
+  --accent2-color: #78c5d7   ;
 
 
   /* change the values below to your chosen font(s) */
@@ -18,16 +17,16 @@ Fonts are separated by a & */
   --paragraph-font: Nunito Sans, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-white: #134266;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #F4FFFB; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
+  --paragraph-color-on-white: #134266; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #968e6d;
  
   --nav-link-color: white;
-  --nav-background-color: #3F4342;
+  --nav-background-color: #134266;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-hover-background-color: #78c5d7;
 }
 
 
@@ -56,6 +55,7 @@ hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent2-color);
+  border: 0;
 }
 header {
   padding: 1em;
@@ -88,10 +88,10 @@ p {
   background-color: var(--primary-color);
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: rgb(36, 34, 34);
 }
 .accent1 {
-  background-color: var(--accent2-color);
+  background-color: var(--accent1-color);
 }
 .accent2{
   background-color: var(--accent2-color);

@@ -48,12 +48,12 @@ h4 {
     border-radius: 5px;
 }
 .book:hover {
-     background-color: 968e6d;
+    background-color: #968e6d;
     color: white;
 }
 .join {
     color: black; 
-    text-decoration: underline;
+    text-decoration: none;
 
 
 }   
@@ -80,6 +80,7 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
 }
 header {
     background-color: #968e6d; 
@@ -103,7 +104,7 @@ footer {
 footer a {
     background-color: #968e6d;
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 footer a:hover {
     color: white;
@@ -114,7 +115,7 @@ footer p {
     font-family: 'Nunito Sans';
 }    
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }    
 .logo {
     width: 80px;

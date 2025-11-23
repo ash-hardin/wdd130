@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    width: 75px;
+}
+
+.box1 {
+    display: flex;
+}
+
+.box1>div {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.dudeguy {
+    width: 80%;
+}
+
+section {
+    margin: 20px auto;
+}
+
+h1, h3 {
+    margin: 10px auto;
+}
+
+.stagebox {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.stagebox>div {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.stagebox>div>img {
+    width: 75%;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+.stagemomentstext, .eventinfo {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footerlogo {
+    width: 100px;
+}

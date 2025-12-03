@@ -1,19 +1,98 @@
-img {
-    margin: 0;
-    width: 100%;
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
 }
-body {
-    margin: 0
-}
-.rounded_image {
-    border: 10px solid #555555;
-    border-radius: 50%;
-    width: 20%;
-    margin: 20px 5%;
 
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
-.rounded_image_holder {
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 2rem;
+}
+
+.box1 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.stagemomentstext {
     text-align: center;
-    background-color: gray;
-    
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.stagebox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.stagebox div {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stagebox img {
+    width: 90%;
+    border-radius: 6px;
+}
+
+.eventinfo {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.moreinfo {
+    display: block;
+    margin: 1.5rem auto;
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
 }

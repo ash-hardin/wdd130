@@ -1,53 +1,75 @@
 body {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Nunito', Helvetica, sans-serif;
 }
 
 .nav {
     display: flex;
-    gap: 20px;
+    gap: 90px;
     justify-content: center;
-    margin-top: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #D5869C;
+}
+
+.nav a:hover {
+    color: #b46f82;
 }
 
 .logo {
-    position: absolute;
-    left: 0;
-    width: 75px;
+    max-height: 70px;
+    width: auto;
+    justify-self: start;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    padding: 20px 70px;
+    border-bottom: 1px solid #ddd;
 }
 
 .box1 {
-    display: flex;
-}
-
-.box1>div {
-    flex-grow: 1;
-    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
 }
 
 .dudeguy {
     width: 80%;
 }
 
-section {
-    margin: 20px auto;
-}
-
 h1, h3 {
     margin: 10px auto;
+    font-family: 'Coiny', cursive;
+    color: #008CBB;
 }
 
 .stagebox {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
 }
 
 .stagebox>div {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 20%;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stagebox>div>p {
+    color: #b46f82;
+    font-family: 'Nunito', Helvetica, sans-serif;
 }
 
 .stagebox>div>img {
@@ -60,16 +82,52 @@ h1, h3 {
     margin-top: 100px;
 }
 
+.eventinfo {
+    margin-top: 80px;
+    font-size: 1.8rem;
+}
+
+.moreinfo {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #D5869C;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+} 
+
+.moreinfo:hover {
+    background: #b46f82;
+}
+
 footer {
     margin-top: 100px;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    align-items: center;
+    padding: 40px;
 }
 
 .footerlogo {
     width: 100px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.botsitelink {
+    text-decoration: none;
+    color: #008CBB;
+}
+
+.botsitelink:hover {
+    color: #036686;
 }

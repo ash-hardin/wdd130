@@ -188,4 +188,34 @@ footer {
   padding: 10px 20px;
   border: 1px solid #ccc;
   border-top: none;
+  line-height: 1.8;
+}
+
+.tabtext {
+  column-count: 2;
+  column-gap: 50px;
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 20px;
+}
+
+.stuff {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.tab-text h4 {
+  text-align: left;
+  color: #dea6b6;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.tab-text p, 
+.tab-text ul {
+  margin-bottom: 15px;
+}
+
+.tab-text ul {
+  padding-left: 20px;   /* Indent for bullets */
 }

@@ -41,14 +41,34 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.box3 {
+    gap: 40px;
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
 .dudeguy {
-    width: 80%;
+    width: 90%;
+    padding: 7px;
 }
 
 h1, h3 {
     margin: 10px auto;
     font-family: 'Coiny', cursive;
     color: #008CBB;
+}
+
+.sub {
+    padding-top: 20px;
 }
 
 .stagebox {
@@ -130,4 +150,42 @@ footer {
 
 .botsitelink:hover {
     color: #036686;
+}
+
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: flex;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Nunito';
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #dea6b6;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-top: none;
 }

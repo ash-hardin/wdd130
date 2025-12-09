@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,34 +16,43 @@
             <a href="eventinfo.html">Event Info</a>
         </div>
     </header>
+
     <main>
         <section>
+            <div class="box2">
                 <div>
                     <h3>KCON 2025</h3>
                     <h1>EVENT INFORMATION</h1>
                     <p>Information regarding the details of KCON 2025</p>
                 </div>
-        </section>
-
-        <section>
-            <div class="box1">
                 <div>
                     <img src="images/rsz_kconjapan2025뉴스룸용1.jpg" alt="kcon japan" class="dudeguy">
-                </div>
-                <div>
-                    <h3>The Culture Behind KCON</h3>
-                    <p>KCON began in 2012 as a small gathering in Los Angeles meant to bring fans closer to the world of Korean pop music and culture. It launched just as K-pop was starting to take off internationally, and the timing helped it grow quickly. What started with a single concert and a few panels soon expanded into a full festival experience, mixing performances with Korean food, beauty, fashion, and drama-focused events. It became an fun way for fans to experience the wider Hallyu wave in one place.
-                        As interest in K-pop spread, KCON grew right along with it, popping up in cities like New York, Tokyo, and Paris. Each stop added its own mix of meet-and-greets, workshops, and fan-driven events, giving people a chance to connect with artists and each other. Over the years, KCON has turned into a place where fans can celebrate the music they love while learning more about the culture behind it.
-                    </p>
                 </div>
             </div>
         </section>
 
-         </section>
-            <h3>KCON 2025 Event Details</h3>
-            <div class="eventdetails">
-                <p>• Location
-KCON 2025 was held at the Los Angeles Convention Center in downtown Los Angeles, California. The venue provided large exhibition halls, performance spaces, and easy access to surrounding cultural hotspots.
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Details')" id="defaultOpen">KCON 2025 Event Details</button>
+        <button class="tablinks" onclick="openCity(event, 'Culture')">The Culture Behind KCON</button>
+    </div>
+
+    <div id="Culture" class="tabcontent">
+        <h3 class="sub">The Culture Behind KCON</h3>
+        <p>KCON began in 2012 as a small gathering in Los Angeles meant to bring fans closer to the world of Korean pop music
+            and culture. It launched just as K-pop was starting to take off internationally, and the timing helped it grow
+            quickly. What started with a single concert and a few panels soon expanded into a full festival experience, mixing 
+            performances with Korean food, beauty, fashion, and drama-focused events. It became a fun way for fans to experience
+            the wider Hallyu wave in one place. As interest in K-pop spread, KCON grew right along with it, popping up in cities
+            like New York, Tokyo, and Paris. Each stop added its own mix of meet-and-greets, workshops, and fan-driven events,
+            giving people a chance to connect with artists and each other. Over the years, KCON has turned into a place where
+            fans can celebrate the music they love while learning more about the culture behind it.</p>
+    </div>
+
+    <div id="Details" class="tabcontent">
+        <h3 class="sub">KCON 2025 Event Details</h3>
+        <p>• Location
+KCON 2025 was held at the Los Angeles Convention Center in downtown Los Angeles, California. The venue provided large exhibition
+halls, performance spaces, and easy access to surrounding cultural hotspots.
 
 • Time
 The event ran from July 10–12, 2025.
@@ -50,32 +60,24 @@ The event ran from July 10–12, 2025.
 July 10: Opening ceremony and evening workshops
 
 July 11: Convention activities during the day, main concert at night
-
 July 12: Special events in the afternoon, farewell concert in the evening
-
 • Event Coordinators
-KCON 2025 was organized by CJ ENM in partnership with Mnet and Live Nation, along with support from sponsors such as Samsung, LG, and Pepsi.
-
+KCON 2025 was organized by CJ ENM in partnership with Mnet and Live Nation, along with support from sponsors such as Samsung, LG,
+and Pepsi.
 • What KCON Represents
-KCON is a global celebration of K-pop and Korean culture, created to connect fans with the music, art, fashion, food, and entertainment of Korea. It serves as a cultural bridge, bringing together people from across the world and giving fans the chance to experience Korean culture in an immersive and interactive way.
-
+KCON is a global celebration of K-pop and Korean culture, created to connect fans with the music, art, fashion, food, and
+entertainment of Korea. It serves as a cultural bridge, bringing together people from across the world and giving fans the chance
+to experience Korean culture in an immersive and interactive way.
 • Events Included in KCON 2025
 KCON 2025 featured a wide variety of experiences, including:
-
 Live K-pop concerts with major artists
-
 Panels and workshops covering dance, beauty, K-drama, and industry insights
-
 Meet-and-greets and fan engagement sessions
-
 Merchandise and exhibition halls featuring K-pop albums, fashion, and K-beauty
-
 Interactive zones, such as VR experiences and Korean food areas
+Special stages and collaborations exclusive to the event.</p>
+    </div>
 
-Special stages and collaborations exclusive to the event</p>
-                <p>info 2</p>
-            </div>
-        <section>
     </main>
     <footer>
         <div class="footer">
@@ -95,5 +97,26 @@ Special stages and collaborations exclusive to the event</p>
     </div>
     </footer>
     
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
 </body>
 </html>

@@ -51,8 +51,11 @@ header {
 }
 
 .box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 40px;
+    align-items: center;
     border-bottom: 1px solid #ddd;
 }
 
@@ -69,6 +72,25 @@ h1, h3 {
 
 .sub {
     padding-top: 20px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+    margin: auto;
+
+}
+
+.collection>div {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px
+}
+
+.collection>div>h3 {
+    color: #D5869C;
 }
 
 .stagebox {
